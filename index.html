@@ -10,10 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Horsocope Generator</title>
   </head>
   <body>
+    <div id="overlay" class="body__overlay"></div>
     <main class="main">
       <div class="main__header-container">
         <h1 class="main__header">THE ZODIAC</h1>
@@ -21,53 +29,73 @@
       <div class="main__zodiac-list">
         <div class="main__item-container">
           <div class="main__aries main--hover main__aries--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <div class="main__modal">
+            <div class="main__modal-container">
+              <div class="main__modal-header">
+                <h2>Aries</h2>
+                <i class="far fa-times-circle"></i>
+              </div>
+              <div class="main__modal-body">
+                <h3>Today's Horoscope</h3>
+                <p class="main__horoscope">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  ex suscipit sapiente tempora distinctio voluptas molestias,
+                  enim, vel laboriosam vitae perferendis, blanditiis nihil neque
+                  illo ducimus voluptatem deleniti quis soluta.
+                </p>
+                <p class="main__compatibility">
+                  <span>Compatible with:</span> Libra
+                </p>
+                <p class="main__lucky"><span>Lucky Number:</span> 21</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="main__item-container">
           <div class="main__taurus main--hover main__taurus--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
         <div class="main__item-container">
           <div class="main__gemini main--hover main__gemini--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
         <div class="main__item-container">
           <div class="main__cancer main--hover main__cancer--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
         <div class="main__item-container">
           <div class="main__leo main--hover main__leo--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
         <div class="main__item-container">
           <div class="main__virgo main--hover main__virgo--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
         <div class="main__item-container">
           <div class="main__libra main--hover main__libra--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
         <div class="main__item-container">
           <div class="main__scorpio main--hover main__scorpio--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
         <div class="main__item-container">
           <div
             class="main__sagittarius main--hover main__sagittarius--hover"
           ></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
         <div class="main__item-container">
           <div class="main__capricorn main--hover main__capricorn--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
         <div class="main__item-container">
           <div class="main__aquarius main--hover main__aquarius--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
         <div class="main__item-container">
           <div class="main__pisces main--hover main__pisces--hover"></div>
-          <div class="main__horoscope main__horoscope--hidden"></div>
+          <!-- <div class="main__modal"></div> -->
         </div>
       </div>
     </main>
