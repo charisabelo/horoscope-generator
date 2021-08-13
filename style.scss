@@ -96,20 +96,34 @@
     -webkit-text-fill-color: transparent;
   }
 
+  &__heading-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading-container p {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: hsla(0, 0%, 70%, 1);
+  }
+
   &__item-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25%;
     height: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 
   &__zodiac-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5rem 5rem 5rem 5rem;
+    padding: 2rem 5rem 5rem 5rem;
     height: 100%;
   }
 

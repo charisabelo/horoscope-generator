@@ -37,14 +37,14 @@ body {
   }
 
   @include mobile {
-    height: 247rem;
+    height: 265rem;
   }
 }
 
 main {
   background-color: $bg;
   border-radius: 1.4rem;
-  height: 70rem;
+  height: 75rem;
   width: 80vw;
 
   @include tablet {
@@ -58,6 +58,6 @@ main {
   }
 
   @include mobile {
-    height: 235rem;
+    height: 249rem;
   }
 }
