@@ -31,6 +31,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include tablet-mobile-adjust {
+    height: 165rem;
+  }
+
+  @include mobile {
+    height: 247rem;
+  }
 }
 
 main {
@@ -43,5 +51,13 @@ main {
     & {
       height: 80rem;
     }
+  }
+
+  @include tablet-mobile-adjust {
+    height: 150rem;
+  }
+
+  @include mobile {
+    height: 235rem;
   }
 }

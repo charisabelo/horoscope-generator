@@ -25,6 +25,16 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 587px) {
+  body {
+    height: 165rem;
+  }
+}
+@media only screen and (max-width: 473px) {
+  body {
+    height: 247rem;
+  }
+}
 
 main {
   background-color: rgba(45, 38, 64, 0.7);
@@ -35,6 +45,16 @@ main {
 @media only screen and (max-width: 738px) {
   main {
     height: 80rem;
+  }
+}
+@media only screen and (max-width: 587px) {
+  main {
+    height: 150rem;
+  }
+}
+@media only screen and (max-width: 473px) {
+  main {
+    height: 235rem;
   }
 }
 
@@ -225,5 +245,26 @@ main {
   }
   .main__header-container {
     padding-top: 2.5rem;
+  }
+}
+@media only screen and (max-width: 587px) {
+  .main__item-container {
+    width: 50%;
+  }
+  .main__aries, .main__taurus, .main__gemini, .main__cancer, .main__leo, .main__virgo, .main__libra, .main__scorpio, .main__sagittarius, .main__capricorn, .main__aquarius, .main__pisces {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 473px) {
+  .main__header {
+    font-size: 4.5rem;
+  }
+  .main__item-container {
+    width: 100%;
+  }
+  .main__aries, .main__taurus, .main__gemini, .main__cancer, .main__leo, .main__virgo, .main__libra, .main__scorpio, .main__sagittarius, .main__capricorn, .main__aquarius, .main__pisces {
+    width: 13rem;
+    height: 13rem;
   }
 }
