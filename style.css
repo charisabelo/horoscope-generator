@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  color: #e6e6e6;
+}
+
+body {
+  font-family: "Darker Grotesque", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../resources/images/jack-b-RWDUvWHobTw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: rgba(45, 38, 64, 0.7);
+  border-radius: 1.4rem;
+  height: 70rem;
+  width: 80vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__header {
+  font-size: 10rem;
+  font-weight: 300;
+  background: linear-gradient(white, rgba(241, 200, 65, 0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main__zodiac-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+  height: 50rem;
+}
+.main--hover:hover {
+  border-radius: 51%;
+  box-sizing: initial;
+  box-shadow: 0 0 3rem 0.5rem rgba(255, 217, 0, 0.5);
+  cursor: pointer;
+}
+.main__aries {
+  background-image: url("./resources/images/aries.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__aries--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/aries.png");
+}
+.main__taurus {
+  background-image: url("./resources/images/taurus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__taurus--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/taurus.png");
+}
+.main__gemini {
+  background-image: url("./resources/images/gemini.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__gemini--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/gemini.png");
+}
+.main__cancer {
+  background-image: url("./resources/images/cancer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__cancer--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/cancer.png");
+}
+.main__leo {
+  background-image: url("./resources/images/leo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__leo--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/leo.png");
+}
+.main__virgo {
+  background-image: url("./resources/images/virgo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__virgo--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/virgo.png");
+}
+.main__libra {
+  background-image: url("./resources/images/libra.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__libra--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/libra.png");
+}
+.main__scorpio {
+  background-image: url("./resources/images/scorpio.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__scorpio--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/scorpio.png");
+}
+.main__sagittarius {
+  background-image: url("./resources/images/sagittarius.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__sagittarius--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/sagittarius.png");
+}
+.main__capricorn {
+  background-image: url("./resources/images/capricorn.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__capricorn--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/capricorn.png");
+}
+.main__aquarius {
+  background-image: url("./resources/images/aquarius.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__aquarius--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/aquarius.png");
+}
+.main__pisces {
+  background-image: url("./resources/images/pisces.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+}
+.main__pisces--hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./resources/images/pisces.png");
+}

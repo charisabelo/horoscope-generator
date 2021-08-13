@@ -1,0 +1,39 @@
+// css resets
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  color: hsla(0, 0%, 90%, 1);
+}
+
+body {
+  font-family: "Darker Grotesque", sans-serif;
+  //   font-weight: 400;
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.2)),
+    url(../resources/images/jack-b-RWDUvWHobTw-unsplash.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: hsla(255, 25%, 20%, 0.7);
+  border-radius: 1.4rem;
+  height: 70rem;
+  width: 80vw;
+}

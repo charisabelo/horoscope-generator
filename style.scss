@@ -1,0 +1,128 @@
+@use './partials/base' as *;
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+
+  &__header {
+    font-size: 10rem;
+    font-weight: 300;
+    background: linear-gradient(hsla(0, 0%, 100%, 1), hsla(46, 86%, 60%, 0.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__zodiac-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    height: 50rem;
+  }
+
+  &--hover:hover {
+    border-radius: 51%;
+    box-sizing: initial;
+    box-shadow: 0 0 3rem 0.5rem hsla(51, 100%, 50%, 0.5);
+    cursor: pointer;
+  }
+
+  &__aries {
+    @include zodiac-bg("./resources/images/aries.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/aries.png");
+    }
+  }
+
+  &__taurus {
+    @include zodiac-bg("./resources/images/taurus.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/taurus.png");
+    }
+  }
+
+  &__gemini {
+    @include zodiac-bg("./resources/images/gemini.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/gemini.png");
+    }
+  }
+
+  &__cancer {
+    @include zodiac-bg("./resources/images/cancer.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/cancer.png");
+    }
+  }
+
+  &__leo {
+    @include zodiac-bg("./resources/images/leo.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/leo.png");
+    }
+  }
+
+  &__virgo {
+    @include zodiac-bg("./resources/images/virgo.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/virgo.png");
+    }
+  }
+
+  &__libra {
+    @include zodiac-bg("./resources/images/libra.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/libra.png");
+    }
+  }
+
+  &__scorpio {
+    @include zodiac-bg("./resources/images/scorpio.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/scorpio.png");
+    }
+  }
+
+  &__sagittarius {
+    @include zodiac-bg("./resources/images/sagittarius.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/sagittarius.png");
+    }
+  }
+
+  &__capricorn {
+    @include zodiac-bg("./resources/images/capricorn.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/capricorn.png");
+    }
+  }
+
+  &__aquarius {
+    @include zodiac-bg("./resources/images/aquarius.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/aquarius.png");
+    }
+  }
+
+  &__pisces {
+    @include zodiac-bg("./resources/images/pisces.png");
+
+    &--hover:hover {
+      @include zodiac-hover("./resources/images/pisces.png");
+    }
+  }
+}
