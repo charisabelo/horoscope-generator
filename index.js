@@ -1,3 +1,5 @@
+const mainURL = "https://aztro.sameerkumar.website";
+
 const aries = document.querySelector(".main__aries");
 const ariesModal = document.querySelector(".main__modal--aries");
 const ariesMainModal = document.querySelector(".main__modal--aries");
@@ -83,147 +85,183 @@ function closeModal() {
 // }
 
 aries.addEventListener("click", function () {
-  const newAries = addModalInfo(
-    "Aries",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  ariesMainModal.innerHTML = newAries;
-  ariesModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=aries&day=today`).then((output) => {
+    console.log(output);
+    let newAries = addModalInfo(
+      "Aries",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    ariesMainModal.innerHTML = newAries;
+    ariesModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 taurus.addEventListener("click", function () {
-  const newTaurus = addModalInfo(
-    "Taurus",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  taurusMainModal.innerHTML = newTaurus;
-  taurusModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=taurus&day=today`).then((output) => {
+    console.log(output);
+    let newTaurus = addModalInfo(
+      "Taurus",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    taurusMainModal.innerHTML = newTaurus;
+    taurusModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 gemini.addEventListener("click", function () {
-  const newGemini = addModalInfo(
-    "Gemini",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  geminiMainModal.innerHTML = newGemini;
-  geminiModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=gemini&day=today`).then((output) => {
+    console.log(output);
+    let newGemini = addModalInfo(
+      "Gemini",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    geminiMainModal.innerHTML = newGemini;
+    geminiModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 cancer.addEventListener("click", function () {
-  const newCancer = addModalInfo(
-    "Cancer",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  cancerMainModal.innerHTML = newCancer;
-  cancerModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=cancer&day=today`).then((output) => {
+    console.log(output);
+    let newCancer = addModalInfo(
+      "Cancer",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    cancerMainModal.innerHTML = newCancer;
+    cancerModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 leo.addEventListener("click", function () {
-  const newLeo = addModalInfo(
-    "Leo",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  leoMainModal.innerHTML = newLeo;
-  leoModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=leo&day=today`).then((output) => {
+    console.log(output);
+    let newLeo = addModalInfo(
+      "Leo",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    leoMainModal.innerHTML = newLeo;
+    leoModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 virgo.addEventListener("click", function () {
-  const newVirgo = addModalInfo(
-    "Virgo",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  virgoMainModal.innerHTML = newVirgo;
-  virgoModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=virgo&day=today`).then((output) => {
+    console.log(output);
+    let newVirgo = addModalInfo(
+      "Virgo",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    virgoMainModal.innerHTML = newVirgo;
+    virgoModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 libra.addEventListener("click", function () {
-  const newLibra = addModalInfo(
-    "Libra",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  libraMainModal.innerHTML = newLibra;
-  libraModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=libra&day=today`).then((output) => {
+    console.log(output);
+    let newLibra = addModalInfo(
+      "Libra",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    libraMainModal.innerHTML = newLibra;
+    libraModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 scorpio.addEventListener("click", function () {
-  const newScorpio = addModalInfo(
-    "Scorpio",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  scorpioMainModal.innerHTML = newScorpio;
-  scorpioModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=scorpio&day=today`).then((output) => {
+    console.log(output);
+    let newScorpio = addModalInfo(
+      "Scorpio",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    scorpioMainModal.innerHTML = newScorpio;
+    scorpioModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 sagittarius.addEventListener("click", function () {
-  const newSagittarius = addModalInfo(
-    "Sagittarius",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  sagittariusMainModal.innerHTML = newSagittarius;
-  sagittariusModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=sagittarius&day=today`).then((output) => {
+    console.log(output);
+    let newSagittarius = addModalInfo(
+      "Sagittarius",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    sagittariusMainModal.innerHTML = newSagittarius;
+    sagittariusModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 capricorn.addEventListener("click", function () {
-  const newCapricorn = addModalInfo(
-    "Capricorn",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  capricornMainModal.innerHTML = newCapricorn;
-  capricornModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=capricorn&day=today`).then((output) => {
+    console.log(output);
+    let newCapricorn = addModalInfo(
+      "Capricorn",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    capricornMainModal.innerHTML = newCapricorn;
+    capricornModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 aquarius.addEventListener("click", function () {
-  const newAquarius = addModalInfo(
-    "Aquarius",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  aquariusMainModal.innerHTML = newAquarius;
-  aquariusModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=aquarius&day=today`).then((output) => {
+    console.log(output);
+    let newAquarius = addModalInfo(
+      "Aquarius",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    aquariusMainModal.innerHTML = newAquarius;
+    aquariusModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 pisces.addEventListener("click", function () {
-  const newPisces = addModalInfo(
-    "Pisces",
-    "api string goes here",
-    "most compatable goes here",
-    "lucky num"
-  );
-  piscesMainModal.innerHTML = newPisces;
-  piscesModal.classList.toggle("active");
-  overlay.classList.toggle("active");
+  axios.post(`${mainURL}?sign=pisces&day=today`).then((output) => {
+    console.log(output);
+    let newPisces = addModalInfo(
+      "Pisces",
+      output.data.description,
+      output.data.compatibility,
+      output.data.lucky_number
+    );
+    piscesMainModal.innerHTML = newPisces;
+    piscesModal.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
 });
 
 // const closeBtn = document.getElementById("close-button");
