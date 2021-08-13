@@ -97,6 +97,17 @@ main {
 .main__modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
+@media only screen and (max-width: 587px) {
+  .main__modal {
+    width: 37rem;
+  }
+}
+@media only screen and (max-width: 473px) {
+  .main__modal {
+    width: 30rem;
+    height: 42rem;
+  }
+}
 .main__modal-header {
   display: flex;
   align-items: center;
