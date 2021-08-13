@@ -61,7 +61,7 @@ main {
 #overlay {
   position: fixed;
   opacity: 0;
-  transition: 1s ease-in-out;
+  transition: 0.6s ease-in-out;
   top: 0;
   left: 0;
   right: 0;
@@ -86,7 +86,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  transition: 1s ease-in-out;
+  transition: 0.6s ease-in-out;
   background-color: #473d66;
   height: 35rem;
   width: 47rem;
