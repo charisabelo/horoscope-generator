@@ -5,28 +5,37 @@
 .main {
   display: flex;
   flex-direction: column;
-  //   justify-content: center;
   align-items: center;
 
   &__header {
     font-size: 10rem;
     font-weight: 300;
-    background: linear-gradient(hsla(0, 0%, 100%, 1), hsla(46, 86%, 60%, 0.5));
+    background: linear-gradient($white, $gold);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
+  &__item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+
   &__zodiac-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    padding-top: 5rem;
-    height: 50rem;
+    padding: 5rem 5rem 5rem 5rem;
+    height: 100%;
   }
 
   &--hover:hover {
     border-radius: 51%;
     box-sizing: initial;
-    box-shadow: 0 0 3rem 0.5rem hsla(51, 100%, 50%, 0.5);
+    box-shadow: 0 0 3rem 0.5rem $bright-gold;
     cursor: pointer;
   }
 
@@ -123,6 +132,47 @@
 
     &--hover:hover {
       @include zodiac-hover("./resources/images/pisces.png");
+    }
+  }
+
+  @include tablet-desktop-adjust {
+    &__header {
+      font-size: 8rem;
+    }
+
+    &__zodiac-list {
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    &__aries,
+    &__taurus,
+    &__gemini,
+    &__cancer,
+    &__leo,
+    &__virgo,
+    &__libra,
+    &__scorpio,
+    &__sagittarius,
+    &__capricorn,
+    &__aquarius,
+    &__pisces {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  @include tablet {
+    &__item-container {
+      width: 30%;
+    }
+
+    &__header {
+      font-size: 6rem;
+
+      &-container {
+        padding-top: 2.5rem;
+      }
     }
   }
 }
